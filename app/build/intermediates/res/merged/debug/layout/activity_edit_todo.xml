@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    android:orientation="vertical"
+    tools:context="com.example.note.EditTodoAcivity" >
+
+    <include
+        android:id="@+id/proxy_toolbar"
+        layout="@layout/proxy_toolbar"/>
+        
+
+    <EditText
+        android:id="@+id/etUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:ems="5"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:text="helllo this is nitin anand and this is testing text"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/sexy_pink"
+        android:onClick="onClick"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<!-- From: file:/E:/AndroidStudioProject/myNotes/app/src/main/res/layout/activity_edit_todo.xml -->
