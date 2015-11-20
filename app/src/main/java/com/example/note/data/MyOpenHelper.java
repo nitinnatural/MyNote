@@ -62,9 +62,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 		values.put(COLUMN_CREATED_AT, note.getCreatedAt().toString());
 		values.put(COLUMN_COLOR, note.getColor());
 
-	    long rowId = dbWriteAccess.insert(TABLE_NAME, null, values); // if row not added rowId equal -1
+	    long rowId = dbWriteAccess.insert(TABLE_NAME, null, values); // if list_item_row not added rowId equal -1
 	    if(rowId != -1){
-	    	Log.d("noteDebug", "row inserted successfully "+rowId);
+	    	Log.d("noteDebug", "list_item_row inserted successfully "+rowId);
 	    }
 	    return rowId;
 	}
@@ -101,7 +101,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	    values.put(COLUMN_CONTENT, note.getContent());
 		values.put(COLUMN_TITLE, note.getTitle());
 		values.put(COLUMN_CREATED_AT, note.getCreatedAt().toString());
-	    // updating row
+	    // updating list_item_row
 	    return dbWriteAccess.update(TABLE_NAME, values, COLUMN_ID + " = ?",
 	            new String[] { note.getId()});
 	}

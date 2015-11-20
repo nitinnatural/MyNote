@@ -23,28 +23,25 @@
 
         <ListView
             android:id="@+id/listView"
-            android:divider="@android:color/transparent"
-            android:dividerHeight="@dimen/v6"
             android:layout_width="match_parent"
-            android:layout_margin="@dimen/v6"
-            android:layout_height="match_parent">
-        </ListView>
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_tiny"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/spacing_tiny"
+            />
 
         <ImageButton
             android:id="@+id/btn_add_new_note"
             android:layout_width="@dimen/fab_large"
             android:layout_height="@dimen/fab_large"
+            android:layout_gravity="right|bottom|end"
             android:layout_margin="15dp"
             android:src="@drawable/plus"
             android:elevation="@dimen/v6"
             android:background="@drawable/oval_shape"
-            android:layout_gravity="right|bottom|end"
             />
 
     </FrameLayout>
 
-
-
-
-
-</LinearLayout><!-- From: file:/E:/AndroidStudioProject/myNotes/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout><!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/layout/activity_main.xml -->

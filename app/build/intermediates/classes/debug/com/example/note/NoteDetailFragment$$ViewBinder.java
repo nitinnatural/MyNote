@@ -10,16 +10,16 @@ public class NoteDetailFragment$$ViewBinder<T extends com.example.note.NoteDetai
     View view;
     view = finder.findRequiredView(source, 2131427431, "field 'proxyToolbar'");
     target.proxyToolbar = finder.castView(view, 2131427431, "field 'proxyToolbar'");
-    view = finder.findRequiredView(source, 2131427430, "field 'llRoot'");
-    target.llRoot = finder.castView(view, 2131427430, "field 'llRoot'");
-    view = finder.findRequiredView(source, 2131427466, "field 'btnBack'");
-    target.btnBack = finder.castView(view, 2131427466, "field 'btnBack'");
-    view = finder.findRequiredView(source, 2131427471, "field 'btnDone'");
-    target.btnDone = finder.castView(view, 2131427471, "field 'btnDone'");
-    view = finder.findRequiredView(source, 2131427469, "field 'btnDelete'");
-    target.btnDelete = finder.castView(view, 2131427469, "field 'btnDelete'");
-    view = finder.findRequiredView(source, 2131427470, "field 'btnEdit'");
-    target.btnEdit = finder.castView(view, 2131427470, "field 'btnEdit'");
+    view = finder.findRequiredView(source, 2131427437, "field 'llRoot'");
+    target.llRoot = finder.castView(view, 2131427437, "field 'llRoot'");
+    view = finder.findRequiredView(source, 2131427464, "field 'btnBack'");
+    target.btnBack = finder.castView(view, 2131427464, "field 'btnBack'");
+    view = finder.findRequiredView(source, 2131427469, "field 'btnDone'");
+    target.btnDone = finder.castView(view, 2131427469, "field 'btnDone'");
+    view = finder.findRequiredView(source, 2131427467, "field 'btnDelete'");
+    target.btnDelete = finder.castView(view, 2131427467, "field 'btnDelete'");
+    view = finder.findRequiredView(source, 2131427468, "field 'btnEdit'");
+    target.btnEdit = finder.castView(view, 2131427468, "field 'btnEdit'");
   }
 
   @Override public void unbind(T target) {

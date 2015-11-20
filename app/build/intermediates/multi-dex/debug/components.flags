@@ -1,14 +1,14 @@
--injars 'E:\AndroidStudioProject\myNotes\app\build\intermediates\multi-dex\debug\allclasses.jar'
--outjars 'E:\AndroidStudioProject\myNotes\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars /home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/multi-dex/debug/allclasses.jar
+-outjars /home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/multi-dex/debug/componentClasses.jar
 
--libraryjars 'C:\android_studio_sdk\build-tools\23.0.1\lib\shrinkedAndroid.jar'
+-libraryjars /home/nitinneo/Android/Sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
 
 -forceprocessing
 -dontoptimize
 -dontobfuscate
 -dontpreverify
 -dontwarn
--printconfiguration 'E:\AndroidStudioProject\myNotes\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration /home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/multi-dex/debug/components.flags
 
 
 -keep class com.example.note.App {

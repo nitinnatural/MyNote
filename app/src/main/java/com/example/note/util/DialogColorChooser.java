@@ -1,10 +1,7 @@
 package com.example.note.util;
 
 
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
@@ -50,7 +47,7 @@ public class DialogColorChooser extends DialogFragment implements View.OnClickLi
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.color_chooser, container, false);
+        View v = inflater.inflate(R.layout.dialog_color_chooser, container, false);
         ButterKnife.bind(this, v);
         init();
         getDialog().requestWindowFeature(STYLE_NO_TITLE);

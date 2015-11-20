@@ -7,15 +7,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import com.example.note.constant.IntentKeys;
 import com.example.note.data.MyOpenHelper;
 import com.example.note.data.Note;
-import com.example.note.util.util;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -45,7 +42,7 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_add_todo, container, false);
+        View v = inflater.inflate(R.layout.activity_new_note, container, false);
         ButterKnife.bind(this, v);
 
         init();

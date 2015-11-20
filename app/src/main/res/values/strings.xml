@@ -13,6 +13,10 @@
     <string name="title_activity_option_menu">Menu</string>
     <string name="title_activity_detail">DetailActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+
+    <!-- correct way of writing string -->
+    <string name="error.message.network">Network error</string>
+    <string name="error.message.call">Call failed</string>
+    <string name="error.message.map">Map loading failed</string>
 
 </resources>

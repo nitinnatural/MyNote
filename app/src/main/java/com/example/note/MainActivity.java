@@ -3,41 +3,25 @@ package com.example.note;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.animation.Animator;
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.transition.TransitionManager;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.note.constant.IntentKeys;
 import com.example.note.data.Note;
 import com.example.note.data.MyOpenHelper;
 import com.example.note.util.util;
-import com.parse.ParseException;
-import com.parse.SaveCallback;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
 
@@ -93,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		btnAdd.setOnClickListener(this);
 	}
 
+
+
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()){
@@ -141,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 			ViewHolder h;
 
 			if (convertView == null){
-				convertView = getLayoutInflater().inflate(R.layout.row, parent, false);
+				convertView = getLayoutInflater().inflate(R.layout.list_item_row, parent, false);
 				h = new ViewHolder(convertView);
 				convertView.setTag(h);
 			} else {

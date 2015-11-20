@@ -19,7 +19,7 @@ public class App extends Application {
 
     @Override
     public void onCreate() {
-        MultiDex.install(this);
+//        MultiDex.install(this);
         super.onCreate();
 
         ParseObject.registerSubclass(Note.class);
@@ -48,9 +48,10 @@ public class App extends Application {
     }
 
 
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
-    }
+//    @Override
+//    protected void attachBaseContext(Context base) {
+//        super.attachBaseContext(base);
+//        MultiDex.install(this);
+//    }
+
 }
