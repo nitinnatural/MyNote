@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.example.note.constant.IntentKeys;
 import com.example.note.data.MyOpenHelper;
@@ -28,8 +29,14 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
     @Bind(R.id.proxy_toolbar)
     Toolbar proxyToolbar;
 
+    @Bind(R.id.ll_root)
+    LinearLayout llRoot;
+    
     @Bind(R.id.ib_done)
     ImageButton btnDone;
+    
+    @Bind(R.id.ib_color) 
+    ImageButton btnColor;
 
     EditText etTitle;
     EditText etContent;
@@ -57,13 +64,15 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
 
         etTitle.setText(mNote.getTitle());
         etContent.setText(mNote.getContent());
+        proxyToolbar.setBackgroundColor(mNote.getColor());
+        llRoot.setBackgroundColor(mNote.getColor());
 
         return v;
     }
 
     void init(){
         setupView();
-
+        btnColor.setOnClickListener(this);
         btnBack.setOnClickListener(this);
         btnDone.setOnClickListener(this);
     }
@@ -73,6 +82,7 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
         MyOpenHelper helper = new MyOpenHelper(getActivity());
         mNote.setTitle(etTitle.getText().toString());
         mNote.setContent(etContent.getText().toString());
+//        mNote.setColor();
         helper.updateTodo(mNote);
         getActivity().finish();
     }
@@ -87,10 +97,14 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
             case  R.id.ib_back:
                 getActivity().finish();
                 break;
+            case R.id.ib_color:
+                // TODO: 22/11/15 open the color chooser dialog 
+                break;
         }
     }
 
     void setupView(){
         btnDone.setVisibility(View.VISIBLE);
+        btnColor.setVisibility(View.VISIBLE);
     }
 }

@@ -8,30 +8,4 @@
     <color name="dark_grey">#333333</color>
     <color name="light_toolbar">#E3F2FD</color>
 
-
-    <!-- Color chooser start-->
-
-    <!-- color 1-->
-    <color name="orange">#FF8A80</color>
-    <!-- color 2-->
-    <color name="pink">#FF80AB</color>
-    <!-- color 3-->
-    <color name="violet">#EA80FC</color>
-    <!-- color 4-->
-    <color name="blue">#42A5F5</color>
-    <!-- color 5-->
-    <color name="cyan">#26C6DA</color>
-    <!-- color 6-->
-    <color name="green">#66BB6A</color>
-    <!-- color 7-->
-    <color name="lime">#CDDC39</color>
-    <!-- color 8-->
-    <color name="green_light">#00E676</color>
-    <!-- color 9-->
-    <color name="amber">#FFC107</color>
-    <!-- color 10-->
-    <color name="teal">#1DE9B6</color>
-
-    <!-- Color chooser end-->
-    
 </resources>

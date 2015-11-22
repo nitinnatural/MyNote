@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="color">
+        <item>#FF8A80</item>
+        <item>#FF80AB</item>
+        <item>#EA80FC</item>
+        <item>#26C6DA</item>
+        <item>#00E676</item>
+        <item>#CDDC39</item>
+        <item>#42A5F5</item>
+        <item>#1DE9B6</item>
+        <item>#66BB6A</item>
+    </string-array>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -19,7 +32,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <color name="amber">#FFC107</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
@@ -28,7 +41,7 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <color name="blue">#42A5F5</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
@@ -41,9 +54,11 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <color name="cyan">#26C6DA</color>
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="dark_grey">#333333</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -64,10 +79,12 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <color name="green">#66BB6A</color>
     <color name="green_light">#00E676</color>
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="grey">#666666</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -78,6 +95,8 @@
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="light_toolbar">#E3F2FD</color>
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <color name="lime">#CDDC39</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -96,6 +115,8 @@
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="off_white">#ebe7e7</color>
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <color name="orange">#FF8A80</color>
     <color name="pink">#FF80AB</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
@@ -124,10 +145,12 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <color name="teal">#1DE9B6</color>
     <color name="violet">#EA80FC</color>
+    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="white">#fff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -1349,6 +1372,7 @@
     </style>
     <style name="ListItemSubText">
         <item name="android:paddingLeft">@dimen/spacing_small</item>
+        <item name="android:paddingRight">@dimen/spacing_small</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/font_normal</item>
     </style>

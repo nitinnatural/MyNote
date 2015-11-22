@@ -1,6 +1,7 @@
 package com.example.note.util;
 
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.example.note.R;
+import com.example.note.constant.Color;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -60,7 +62,17 @@ public class DialogColorChooser extends DialogFragment implements View.OnClickLi
         activity.onFinishColorDialog(colorCode);
     }
 
+
     void init(){
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            color1.setBackground(util.createOvalShape(Color.COLOR_1));
+            color2.setBackground(util.createOvalShape(Color.COLOR_2));
+            color3.setBackground(util.createOvalShape(Color.COLOR_3));
+            color4.setBackground(util.createOvalShape(Color.COLOR_4));
+            color5.setBackground(util.createOvalShape(Color.COLOR_5));
+        }
+
         color1.setOnClickListener(this);
         color2.setOnClickListener(this);
         color3.setOnClickListener(this);
@@ -72,24 +84,23 @@ public class DialogColorChooser extends DialogFragment implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.color_choose_1:
-                int color = getResources().getColor(R.color.orange);
-                selectColor(color);
+                selectColor(android.graphics.Color.parseColor(Color.COLOR_1));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_2:
-                selectColor(getResources().getColor(R.color.blue));
+                selectColor(android.graphics.Color.parseColor(Color.COLOR_2));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_3:
-                selectColor(getResources().getColor(R.color.green_light));
+                selectColor(android.graphics.Color.parseColor(Color.COLOR_3));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_4:
-                selectColor(getResources().getColor(R.color.lime));
+                selectColor(android.graphics.Color.parseColor(Color.COLOR_4));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_5:
-                selectColor(getResources().getColor(R.color.amber));
+                selectColor(android.graphics.Color.parseColor(Color.COLOR_5));
                 getDialog().dismiss();
                 break;
         }

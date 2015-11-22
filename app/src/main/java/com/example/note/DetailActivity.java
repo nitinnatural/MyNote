@@ -19,7 +19,7 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_blank);
 
         mFm = getFragmentManager();
         Fragment fragment = mFm.findFragmentById(R.id.container);

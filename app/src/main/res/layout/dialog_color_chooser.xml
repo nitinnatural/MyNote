@@ -10,7 +10,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         style="@style/Base.Widget.AppCompat.ActionButton"
-        android:background="@drawable/oval_chooser_one"/>
+        />
 
     <ImageButton
         android:layout_margin="@dimen/v6"
@@ -18,7 +18,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         style="@style/Base.Widget.AppCompat.ActionButton"
-        android:background="@drawable/oval_choose_two"/>
+        />
 
     <ImageButton
         android:layout_margin="@dimen/v6"
@@ -26,7 +26,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         style="@style/Base.Widget.AppCompat.ActionButton"
-        android:background="@drawable/oval_choose_three"/>
+        />
 
     <ImageButton
         android:layout_margin="@dimen/v6"
@@ -34,7 +34,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         style="@style/Base.Widget.AppCompat.ActionButton"
-        android:background="@drawable/oval_choose_four"/>
+        />
 
     <ImageButton
         android:layout_margin="@dimen/v6"
@@ -42,7 +42,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         style="@style/Base.Widget.AppCompat.ActionButton"
-        android:background="@drawable/oval_choose_five"/>
+        />
 
 
 </LinearLayout>
