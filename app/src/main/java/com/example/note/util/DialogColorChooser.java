@@ -1,6 +1,8 @@
 package com.example.note.util;
 
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.example.note.NewNoteFragment;
 import com.example.note.R;
 import com.example.note.constant.Color;
 
@@ -17,16 +20,15 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by IAMONE on 11/18/2015.
+ * @author nitinnatural@gmail.com
  */
+
+
 public class DialogColorChooser extends DialogFragment implements View.OnClickListener {
 
-    public interface DialogColorChooserListener{
-        public void onFinishColorDialog(int color);
-    }
 
  public DialogColorChooser(){
-     // empty constructure required
+//      empty constructor required
  }
 
 
@@ -57,15 +59,11 @@ public class DialogColorChooser extends DialogFragment implements View.OnClickLi
     }
 
 
-    void selectColor(int colorCode){
-        DialogColorChooserListener activity = (DialogColorChooserListener) getActivity();
-        activity.onFinishColorDialog(colorCode);
-    }
-
 
     void init(){
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+
             color1.setBackground(util.createOvalShape(Color.COLOR_1));
             color2.setBackground(util.createOvalShape(Color.COLOR_2));
             color3.setBackground(util.createOvalShape(Color.COLOR_3));
@@ -84,28 +82,38 @@ public class DialogColorChooser extends DialogFragment implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.color_choose_1:
-                selectColor(android.graphics.Color.parseColor(Color.COLOR_1));
+                sendResult(android.graphics.Color.parseColor(Color.COLOR_1));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_2:
-                selectColor(android.graphics.Color.parseColor(Color.COLOR_2));
+                sendResult(android.graphics.Color.parseColor(Color.COLOR_2));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_3:
-                selectColor(android.graphics.Color.parseColor(Color.COLOR_3));
+                sendResult(android.graphics.Color.parseColor(Color.COLOR_3));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_4:
-                selectColor(android.graphics.Color.parseColor(Color.COLOR_4));
+                sendResult(android.graphics.Color.parseColor(Color.COLOR_4));
                 getDialog().dismiss();
                 break;
             case R.id.color_choose_5:
-                selectColor(android.graphics.Color.parseColor(Color.COLOR_5));
+                sendResult(android.graphics.Color.parseColor(Color.COLOR_5));
                 getDialog().dismiss();
                 break;
         }
     }
 
 
+
+
+    void sendResult(int colorCode){
+        if (getTargetFragment()==null)
+            return;
+        Intent i = new Intent();
+        i.putExtra(NewNoteFragment.INTENT_COLOR_EXTRA, colorCode);
+        getTargetFragment()
+                .onActivityResult(getTargetRequestCode(), Activity.RESULT_OK, i);
+    }
 
 }

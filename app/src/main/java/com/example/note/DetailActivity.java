@@ -13,6 +13,11 @@ import android.view.MenuItem;
 
 import com.example.note.R;
 
+/**
+ * @author nitinnatural@gmail.com
+ *
+ */
+
 public class DetailActivity extends AppCompatActivity {
     android.app.FragmentManager mFm;
 
@@ -32,6 +37,27 @@ public class DetailActivity extends AppCompatActivity {
                     .commit();
         }
     }
+
+//
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        //opening transition animations
+//        overridePendingTransition(R.anim.open_translate, R.anim.close_translate);
+//    }
+//
+//    @Override
+//    protected void onPause()
+//    {
+//        super.onPause();
+//        //closing transition animations
+//        overridePendingTransition(R.anim.close_translate, R.anim.open_translate);
+//    }
 
 
 }

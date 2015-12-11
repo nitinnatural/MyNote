@@ -19,7 +19,7 @@ public class Note implements Serializable {
 	public String mTitle;
 	public int mColor;
 	
-	// constructor
+//	 constructor
 	public Note() {
 	}
 	

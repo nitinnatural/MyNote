@@ -32,20 +32,10 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="amber">#FFC107</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="blue">#42A5F5</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -54,9 +44,6 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="cyan">#26C6DA</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="dark_grey">#333333</color>
@@ -79,10 +66,6 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="green">#66BB6A</color>
-    <color name="green_light">#00E676</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="grey">#666666</color>
@@ -95,9 +78,8 @@
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="light_toolbar">#E3F2FD</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="lime">#CDDC39</color>
+    <color name="lime">#C6FF00</color>
+    <color name="lime_dark">#AEEA00</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -115,10 +97,6 @@
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="off_white">#ebe7e7</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="orange">#FF8A80</color>
-    <color name="pink">#FF80AB</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -145,10 +123,6 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <color name="teal">#1DE9B6</color>
-    <color name="violet">#EA80FC</color>
     <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="white">#fff</color>
@@ -419,7 +393,6 @@
         <!-- Set AppCompat’s color theming attrs -->
         <item name="colorPrimary">@color/sky_blue</item>
         <item name="colorPrimaryDark">@color/dark_grey</item>
-
 
         <!-- colorAccent is used as the default value for colorControlActivated,
          which is used to tint widgets -->

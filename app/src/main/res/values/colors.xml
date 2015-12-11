@@ -6,6 +6,8 @@
     <color name="off_white">#ebe7e7</color>
     <color name="sexy_pink">#FF4081</color>
     <color name="dark_grey">#333333</color>
+    <color name="lime">#C6FF00</color>
+    <color name="lime_dark">#AEEA00</color>
     <color name="light_toolbar">#E3F2FD</color>
 
 </resources>

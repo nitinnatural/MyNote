@@ -13,7 +13,7 @@ import com.parse.ParseObject;
 import com.parse.SaveCallback;
 
 /**
- * Created by IAMONE on 11/14/2015.
+ * @author nitinnatural@gmail.com
  */
 public class App extends Application {
 

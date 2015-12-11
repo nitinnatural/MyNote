@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/proxy_toolbar"
+        layout="@layout/proxy_toolbar"
+        />
 
     <LinearLayout
         android:id="@+id/ll_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:transitionName="note"
         >
 
-        <include
-            android:id="@+id/proxy_toolbar"
-            layout="@layout/proxy_toolbar"
-            />
 
         <TextView
             android:id="@+id/tv_title"
@@ -48,6 +52,6 @@
 
     </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
 
 <!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/layout/fragment_note_detail.xml -->

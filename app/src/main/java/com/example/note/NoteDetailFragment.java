@@ -24,7 +24,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by IAMONE on 11/14/2015.
+ * @author nitinnatural@gmail.com
  */
 public class NoteDetailFragment extends Fragment implements View.OnClickListener {
 
@@ -92,6 +92,7 @@ public class NoteDetailFragment extends Fragment implements View.OnClickListener
         switch (v.getId()){
             case R.id.ib_edit:
                 getActivity().getFragmentManager().beginTransaction()
+                        .setCustomAnimations(R.anim.fragment_fade_in, R.anim.fragment_fade_out)
                         .add(R.id.container, new NoteEditFragment(), "").addToBackStack(null).commit();
                 break;
 

@@ -11,6 +11,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+/**
+* @author nitinnatural@gmail.com
+* */
+
 public class MyOpenHelper extends SQLiteOpenHelper {
 	
 	private static final String DATABASE_NAME = "note.db";
@@ -24,7 +28,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	public static final String COLUMN_CONTENT = "content" ;
 	public static final String COLUMN_COLOR = "color";
 	
-	// create query to create table
+//	 create query to create table
 	private static final String SQL_QUERY = "CREATE TABLE "
 		      + TABLE_NAME + "(" + COLUMN_ID
 		      + " TEXT PRIMARY KEY, " + COLUMN_TITLE + " TEXT, "
@@ -52,7 +56,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 		onCreate(db);		
 	}
 	
-	// method to create a TO-DO
+//	 method to create a TO-DO
 	public long addNewTodo(Note note){
 	    SQLiteDatabase dbWriteAccess = this.getWritableDatabase();	    
 	    ContentValues values = new ContentValues();
@@ -69,14 +73,14 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	    return rowId;
 	}
 	
-	// query to get all notes
+//	 query to get all notes
 	public List<Note> readAllTodo(){
 		List<Note> notes = new ArrayList<Note>();
 	    String selectQuery = "SELECT  * FROM " + TABLE_NAME;
 	    SQLiteDatabase dbReadAccess = this.getReadableDatabase();
 	    Cursor c = dbReadAccess.rawQuery(selectQuery, null);
 	 
-	    // looping through all rows and adding to list
+//	     looping through all rows and adding to list
 	    if (c.moveToFirst()) {
 	        do {
 	        	Note note = new Note();
@@ -116,7 +120,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	            new String[] { id });
 	}	
 	
-	// closing database
+	/*
+	* Close Database
+	* */
     public void closeDB() {
         SQLiteDatabase dbReadAccess = this.getReadableDatabase(); 
         if (dbReadAccess != null && dbReadAccess.isOpen())

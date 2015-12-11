@@ -19,7 +19,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by IAMONE on 11/14/2015.
+ * @author nitinnatural@gmail.com
  */
 public class NoteEditFragment extends Fragment implements View.OnClickListener {
 
@@ -49,7 +49,7 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_new_note, container, false);
+        View v = inflater.inflate(R.layout.fragment_new_note, container, false);
         ButterKnife.bind(this, v);
 
         init();
@@ -98,7 +98,7 @@ public class NoteEditFragment extends Fragment implements View.OnClickListener {
                 getActivity().finish();
                 break;
             case R.id.ib_color:
-                // TODO: 22/11/15 open the color chooser dialog 
+                // TODO: 22/11/15 open the color chooser dialog
                 break;
         }
     }

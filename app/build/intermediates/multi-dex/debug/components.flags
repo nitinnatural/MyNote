@@ -1,0 +1,46 @@
+-injars /home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/multi-dex/debug/allclasses.jar
+-outjars /home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /home/nitinneo/Android/Sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration /home/nitinneo/AndroidStudioProjects/myNotes/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class com.example.note.App {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.example.note.MainActivity {
+    <init>();
+}
+
+-keep class com.example.note.NewNoteActivity {
+    <init>();
+}
+
+-keep class com.example.note.DeleteActivity {
+    <init>();
+}
+
+-keep class com.example.note.Menu {
+    <init>();
+}
+
+-keep class com.example.note.DetailActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

@@ -1,7 +1,7 @@
 package com.example.note.constant;
 
 /**
- * Created by nitinneo on 22/11/15.
+ * @author nitinnatural@gmail.com
  */
 public class Color {
     public static final String COLOR_1 = "#1DE9B6";

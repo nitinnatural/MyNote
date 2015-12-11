@@ -1,8 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.note.MainActivity">
 
     <android.support.v7.widget.Toolbar
@@ -15,10 +17,10 @@
         android:background="?attr/colorPrimary"
         />
 
+
     <FrameLayout
-        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="fill_parent">
 
         <ListView
             android:id="@+id/listView"
@@ -26,21 +28,29 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/spacing_tiny"
             android:layout_marginRight="@dimen/spacing_tiny"
+            android:layoutAnimation="@anim/layout_list_item_anim"
             android:divider="@android:color/transparent"
             android:dividerHeight="@dimen/spacing_tiny"
             />
+
 
         <ImageButton
             android:id="@+id/btn_add_new_note"
             android:layout_width="@dimen/fab_large"
             android:layout_height="@dimen/fab_large"
-            android:layout_gravity="right|bottom|end"
+            android:layout_gravity="bottom|end"
             android:layout_margin="15dp"
             android:src="@drawable/plus"
             android:elevation="@dimen/v6"
+            app:layout_anchor="@id/listView"
+            app:layout_anchorGravity="bottom|right|end"
             android:background="@drawable/oval_shape"
+
             />
 
     </FrameLayout>
+
+
+
 
 </LinearLayout><!-- From: file:/home/nitinneo/AndroidStudioProjects/myNotes/app/src/main/res/layout/activity_main.xml -->
